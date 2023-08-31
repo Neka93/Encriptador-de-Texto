@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Encriptador de Texto</title>
+    
+</head>
+<body>
+<!--Seccion1-->    
+    <header class="header">
+        <img src="imagenes/logo.png" alt="Logo Alura">
+    </header>
+    <main class="main"> 
+        <div class="seccion1">
+            <input type="text" id="textoEncriptado" name="text1" class="text1"
+                 placeholder="Ingrese el texto aqui:"> 
+<!--Botones-->   <div class="bloque1">
+
+    <img src="imagenes/vector.png" alt="Signo Exclamación">
+
+    <spam class="mensaje">Sólo letras minúsculas y sin acentos.</spam> 
+            <div class="seccion-botones">   
+                    <button type="button" id="botonEncriptar" class="boton-encriptar" >Encriptar</button>
+                        <button type="button" id="botonDesencriptar" class="boton-desencriptar" >Desencriptar</button>
+                </div>
+            </div>        
+            </form>
+        </div>
+<!--Seccion2-->
+            <section class="seccion2">
+                <textarea name="resultado" id="textoDesencriptado" class="mensaje-final ajustar">Ningún mensaje fue encontrado</textarea>  
+                    <h1 class="mensaje2" name="mensaje2" id="mensaje2">Ingresa el texto que deseas encriptar o desencriptar</h1>
+                    <button type="button"   id="botonCopiar" class="boton-copiar">Copiar</button>
+                </form>                
+            </section>
+    </main> 
+<!--Pie de Página-->
+<footer>
+Reto Challenge: Encriptador de Texto. Alura Latam, ONE Oracle Next Education.
+G5. Carolina Gutiérrez Lucero.  México.
+</footer>  
+</body>
+<script>
+    var btn = document.querySelector("#botonEncriptar");
+    btn.onclick = encriptar;
+    var btn2 = document.querySelector("#botonDesencriptar");
+    btn2.onclick = desencriptar;
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+</script>
+</html>
